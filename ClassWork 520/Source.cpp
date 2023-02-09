@@ -181,6 +181,15 @@ public:
 					return true;
 		return false;
 	}
+	
+	
+	int operator[](unsigned int index)
+	{
+		if(index == 0) return day;
+		else if (index == 1) return month;
+		else if (index == 2) return Year;
+		else throw "Incorrect index!";
+	}
 };
 
 
